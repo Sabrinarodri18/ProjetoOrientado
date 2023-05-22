@@ -1,0 +1,36 @@
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid;
+}
+
+tr:nth-child(even) {
+      background-color: #d1bdf6
+}
+
+th {
+    background-color: #421470;
+    color: white;
+}
+
+th {
+    color: rgb(240, 234, 245);
+}
+
+td {
+    color: #2a0a4a;
+}
+
+h2{
+    margin-left: 25%;
+    color:  rgb(69, 22, 113);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div {
+    width: 700px;
+    background-color: transparent;
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-left: 25%;
+}

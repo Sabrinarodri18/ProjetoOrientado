@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+
+        <head>
+            <meta charset="UTF-8">
+            <title>Descobrindo propriedades CSS | Projeto Orientado</title>
+            <link href="css/mainCss.css" rel="stylesheet">
+            <link href="css/propCss.css" rel="stylesheet">
+        </head>
+
+        <body id="topo">
+
+            <h1 class="principal">Projeto Orientado</h1>
+
+                <p class="menu"> 
+                    <a href="home.html">Home</a> | 
+                    <a href="sabrina.html">Sabrina Rodrigues</a> | 
+                    <a href="ryan.html">Ryan Miranda</a> | 
+                    <a href="tabela.html">Tabela de curiosidades</a> | 
+                    <a href="sites_favoritos.html">Sites favoritos</a> | 
+                    <a href="tags.html">Descobrindo tags</a> | 
+                    Descobrindo propriedades Css |
+                    <a href="form.html">Contato</a>
+                </p>
+        
+
+                <h2>Propriedades CSS:</h2>
+                
+                <div class="bordas">
+                    <h3>:focus</h3>
+
+                    A propriedade <strong>:focus</strong> é um seletor de classe que é muito utilizada em formulários, quando o usuario seleciona o elemento clicando nele com o mouse a frase dentro da caixa muda de cor, exemplo de como pode ser feito isso na linguagem CSS:
+                        
+                    <p>
+                        .nome:focus {
+                            color: rgb(152,89,212)
+                        }
+                    </p>
+
+                    <br>
+                    
+                    <input class="nome" value="Esse elemento ficará roxo quando focado">
+                </div>
+
+
+                <br>
+
+                <div class="bordas">
+                <h3>efeito de animação</h3>
+
+                    Os <strong>efeitos de animação </strong>são ativados quando passa o mouse sobre o botão que está com a animação, segue um exemplo de como pode ser feita a animação na linguagem CSS:
+                    <br>
+                    Nessa animação ao passar o mousse sobre o botão ele vira e mostra outra frase escrita, segue abaixo o exemplo de como fazer essa animação acontecer:
+
+                <p>
+                    Primeiro você vai criar uma class, a minha ta com o nome .efeito, nessa class você vai definir como você quer a cor, tamanho, tamanho da frase, do botão, etc..
+                    <br> 
+                    veja um exemplo:
+                </p>
+
+                <p>
+                    .efeito {
+                        border:none;
+                        <br>
+                        color: blueviolet;
+                        <br>
+                        padding: 20px;
+                        <br>
+                        margin: 10px; 
+                        <br>
+                        font-size: 24px;
+                        <br>
+                        line-height: 24px;
+                        <br>
+                        border-radius: 18px;
+                        <br>
+                        position: relative;
+                        <br>
+                        box-sizing: border-box;
+                        <br>
+                        cursor: pointer;
+                        <br>
+                        transition: all 400ms ease;
+                        <br>
+                    }
+                </p>
+
+                <br>
+                
+                <strong>css do  efeito:</strong>
+                
+                <p>
+                    .efeito1 {
+                        <br>
+                        background-color: rgb(65, 7, 120);
+                        <br>
+                        transform-style: preserve-3d;
+                        <br>
+                    }
+
+                    <br>
+                    
+                    .efeito1:after {
+                        <br>
+                        background: rgb(93, 19, 162);
+                        <br>
+                        border-radius: 18px;
+                        <br>
+                        box-sizing: border-box;
+                        <br>
+                        content: "mudou";
+                        <br>
+                        transform-origin: left bottom;
+                        <br>
+                        transform: rotateX(90deg);
+                        <br>
+                        top: 100%;
+                        <br>
+                        left: 8px;
+                        <br>
+                        width: 100%;
+                        <br>
+                        padding: 20px;
+                        <br>
+                        position:absolute; 
+                        <br>
+                    }  
+
+                    <br>
+
+                    .efeito1:hover {
+                        <br>
+                        transform-origin:center bottom;
+                        <br>
+                        transform:rotateX(-90deg) translate(100%);
+                        <br>
+                    }
+                </p>
+
+                <br>
+                <button type="button" class="efeito1 efeito">Passe o mouse</button>
+                </div>
+
+                <br>
+
+                <div class="bordas">
+                <h3>Background-imagem</h3>
+
+                A Propriedade <strong>Background-imagem</strong> define o plano de fundo de um elemento, tendo uma foto de fundo, pode ter também uma caixa com borda, caixa colorida com o texto em destaque, caixa de preenchimento ou caixa de contéudo.
+
+                <br>
+
+                A linguagem css background-imagem é feita da seguinte forma:
+
+                <p>
+
+                    <br>
+                    .image{
+                    <br> 
+                        font-size:2.9em;
+                        <br>
+                        color:rgb(197,240,255);
+                        <br>
+                        background-image:none;
+                        <br>
+                    }
+                    <br>
+                    div{
+                    <br>
+                        background-image:
+                    <br>
+                        url(imagem.png)
+                    <br>
+                    }
+                    <br>
+                    #background-image:
+                    <br>
+                    url(imagem.png);
+                </p>
+
+                <p class="image" id="background">o elemento ficará dessa forma</p>
+                </div>
+
+                <p><a href=#topo id="top">Voltar para o topo da página</a></p>
+            
+        </body>
+    </html>

@@ -1,0 +1,30 @@
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:  rgb(96, 3, 184);
+    text-align: center;
+}
+
+h3 {
+color: rgb(3, 3, 3);
+}
+
+div {
+    width: 650px;
+    margin-left: 20%;
+    background-color: transparent;
+    margin-right: 10;
+    border-radius: 30px;
+    padding: 30px;
+    border-style: dashed;
+    border-color:rgb(26, 38, 209);
+}
+
+li {
+ background-color: transparent;
+ color: rgb(47, 3, 47);
+ line-height: 35px;
+}
+
+.edit {
+    color: rgb(26, 38, 209);
+}

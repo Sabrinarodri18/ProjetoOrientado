@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+  <html lang="pt-br"> 
+    <head>
+      <meta charset="UTF-8">
+      <title>Contato | Projeto Orientado</title>
+      <link href="css/mainCss.css" rel="stylesheet">
+      <link href="css/formCss.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+      
+      <h1 class="principal">Projeto Orientado</h1>
+
+        <p class="menu"> 
+          <a href="home.html">Home</a> | 
+          <a href="sabrina.html">Sabrina Rodrigues</a> | 
+          <a href="ryan.html">Ryan Miranda</a> | 
+          <a href="tabela.html">Tabela de curiosidades</a> | 
+          <a href="sites_favoritos.html">Sites favoritos</a> | 
+          <a href="tags.html">Descobrindo tags</a> | 
+          <a href="propCss.html">Descobrindo propriedades Css</a> |
+          Contato
+        </p>
+          
+        <div>
+            <h2>Formulário WEB</h1>
+            <p id="subtitulo"><strong>Complete com as suas informações:</strong></p>
+        </div>
+
+        <form action=" http://hub.fatecrl.edu.br/sobrino/recebe.php" method="post">
+        
+          <fieldset class="grupo">
+
+            <label class="nome">Nome:</label>
+            <br>
+            <input type="text" name="nome" id="name" placeholder="seu nome" size="35" maxlength="30"/>
+
+            <br>
+
+            <label class="nome">Sobrenome:</label>
+            <br>
+            <input type="text" class="campo" name="sobrenome" id="sobrenome" placeholder="seu sobrenome" size="35" maxlength="50"/>
+
+            <br>
+
+            <label id="email"> Email: </label>
+            <br>
+            <input type="email" name="email" placeholder="seu email" size="30" maxlength="30"/>
+
+            <br>
+
+            <label id="tell"> Telefone / Celular:</label>
+            <br>
+            <input type="tel" class="campo" name="numero" id="tel" placeholder="digite DDD e o numero" size="30" maxlength="12" />
+
+            <br>
+
+            <label id="cep">Cep:</label>
+            <br>
+            <input name="cep" id="cep"  placeholder="Digite seu cep" size="25" maxlength="9"/>
+    
+            <br>
+                
+            <label class="cidade">Coloque sua cidade:</label>
+            <br>
+              <select id="cidade" name="cidade"> 
+              <option value="Guaruja">Guarujá</option>
+              <option value="santos">Santos</option>
+              <option value="praia-grande">Praia grande</option>
+              <option value="bertioga">Bertioga</option>
+              <option value="OutraS">Outra</option> </select>
+
+          <p>
+            <label id="data">Data de nascimento: </label>
+            <br>
+            <input type="date" name="data" min="2000-01-02" class="nome"/>
+          </p>
+        </fieldset>
+
+          <fieldset class="sexo">
+            <legend id="sexo">Sexo</legend>
+            <input type="radio" name="sexo" value="feminino" id="fem"/>
+            <label for="fem">Feminino</label>
+            <input type="radio" name="sexo" value="masculino" id="mas"/>
+            <label for="mas">Masculino</label>
+          </fieldset>
+
+          <br>
+
+          <fieldset class="grupo">
+            <label id="tec">Selecione qual das linguagens abaixo você mais utiliza</label><br>
+            <input type="checkbox" name="tec1"  id="tecnologia1" value="HTML">
+              <label for="tecnologia1">HTML</label>
+            <input type="checkbox" name="tec2"  id="tecnologia2"  value="CSS">
+              <label for="tecnologia2">CSS</label>
+            <input type="checkbox" name="tec3"  id="tecnologia3"  value="javascript">
+              <label for="tecnologia3">javascript</label>
+          </fieldset>
+
+          <br>
+
+          <div class="campo">
+            <label class="conte">Conte um pouco da sua experiência com uma dessas linguagens: </label>
+            <textarea spellcheck="true" rows="6" style="width: 26em;" id="experiencia" name="experiencia"></textarea>
+          </div>
+
+          <br>
+
+          <fieldset id="barra">
+            <legend class="nome"> Captcha</legend>
+            <label for="pergunta">Escreva quanto é 3x3</label>
+            <input type="text" id="pergunta" size="1" required name="pergunta"/>        
+          </fieldset>         
+          
+          <p>
+            <input type="submit" value="Cadastrar" id="entrar">
+          </p>
+
+        </form>
+
+    </body>
+  </html> 

@@ -1,0 +1,65 @@
+.nome:focus {
+    color:rgb(133, 45, 216);
+}
+
+#efeitos {
+   color:  rgb(105, 56, 151);
+}
+.efeito1 {
+    background-color: rgb(65, 7, 120);
+    transform-style: preserve-3d;
+}
+
+.efeito1::after {
+    background: rgb(65, 7, 120);
+    border-radius: 18px;
+    box-sizing: border-box;
+    content: "mudou";
+    transform-origin: left bottom;
+    transform: rotateX(90deg);
+    top: 100%;
+    left: 8px;
+    width: 100%;
+    padding: 20px;
+    position:absolute; 
+}
+
+.efeito1:hover {
+    transform-origin:center bottom;
+    transform:rotateX(-90deg) translate(100%);
+}
+
+.efeito {
+    border:none;
+    color: rgb(228, 220, 235);
+    padding: 20px;
+    margin: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 18px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.image {
+  font-size: 2.9em;
+  color: rgb(101, 214, 255);
+  background-image:none;
+}
+
+div {
+    background-image:
+    url(esquilo.jpg);
+}
+
+#background {
+    background-image: 
+    url(esquilo.jpg);
+}
+
+#top {
+    margin-left: 950px;
+    color: rgb(105, 56, 151);
+}
